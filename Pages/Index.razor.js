@@ -9,8 +9,9 @@
     });
 }
 
-export function layoutPortfolio() {
+export function workLoaded() {
     var $container = $('.work-filter');
+
     $container.isotope({
         filter: '*',
         layoutMode: 'masonry',
@@ -19,9 +20,12 @@ export function layoutPortfolio() {
             easing: 'linear'
         }
     });
-}
 
-export function workLoaded() {
+    // layout Isotope after each image loads
+    $container.imagesLoaded().progress(function () {
+        $container.isotope('layout');
+    });
+
     var $filter = $('#menu-filter');
     $filter.find('a').on("click", function () {
         var selector = $(this).attr('data-filter');
