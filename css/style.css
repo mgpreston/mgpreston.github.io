@@ -906,8 +906,8 @@ button:focus {
 
 /* ========= Make all anchors look better ===========*/
 a {
-    color: #fff !important;
-    background-color: transparent !important;
+    color: #fff;
+    background-color: transparent;
     transition: all 0.5s;
 }
 

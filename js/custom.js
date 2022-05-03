@@ -13,8 +13,8 @@
 
     //PreLoader
     KerriApp.prototype.initPreLoader = function() {
-        $('#status').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
+        //$('#status').fadeOut();
+        //$('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350).css({
             'overflow': 'visible'
         });
@@ -118,11 +118,11 @@
     KerriApp.prototype.init = function() {
         this.initPreLoader();
         //this.initStickyMenu();
-        this.initScrollspy();
+        //this.initScrollspy();
         //this.initWork();
-        this.initMagnificPopup();
-        this.initBackToTop();
-        this.initTestimonial();
+        //this.initMagnificPopup();
+        //this.initBackToTop();
+        //this.initTestimonial();
     },
     //init
     $.KerriApp = new KerriApp, $.KerriApp.Constructor = KerriApp
